@@ -16,8 +16,8 @@ Abaixo estão listadas as tarefas priorizadas referentes aos problemas de aquisi
     - É preciso verificar se o tratamentos dos dados  está adequados nos demais pluvigrafos tmb.
     - Pedi para o Lucas me repassar a documentação dos aparelhos para entender o formato correto da leitura.
 
-### 🟡 Demanda 2: Correção de Inserção do Pluviógrafo Basculante
-**Prioridade:** Importante
+### 🔴 Demanda 2: Correção de Inserção do Pluviógrafo Basculante
+**Prioridade:** Urgente
 
 *   **O Problema 1 (Valores Incorretos):** O novo pluviógrafo basculante está retornando dados de chuva muito baixos, que mal aparecem no painel (o esperado de cada registro - "báscula" - seria de no mínimo 0.2 mm).
 *   **Origem:** Basculante tipo pluviógrafo.
