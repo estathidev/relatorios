@@ -1,0 +1,32 @@
+---
+title: "Demandas Instruments"
+format: html
+---
+
+##  Demandas Instruments
+
+Abaixo estão listadas as tarefas priorizadas referentes aos problemas de aquisição e visualização de dados dos sensores no site.
+
+### 🔴 Demanda 1: Correção nos Pluviógrafos da Estação Meteorológica
+**Prioridade:** Urgente
+
+*   **O Problema:** Os dados de chuva exibidos no painel de monitoramento, do site, estão irreais (ex: 40 mm em intervalos menores que 30 minutos). Isso está puxando as faixas de alerta dos limiares para cima de forma errada.
+*   **Origem:** Pluviógrafo tipo estação meteorológica.
+*   **Pontos Importantes**
+    - É preciso verificar se o tratamentos dos dados  está adequados nos demais pluvigrafos tmb.
+    - Pedi para o Lucas me repassar a documentação dos aparelhos para entender o formato correto da leitura.
+
+### 🟡 Demanda 2: Correção de Inserção do Pluviógrafo Basculante
+**Prioridade:** Importante
+
+*   **O Problema 1 (Valores Incorretos):** O novo pluviógrafo basculante está retornando dados de chuva muito baixos, que mal aparecem no painel (o esperado de cada registro - "báscula" - seria de no mínimo 0.2 mm).
+*   **Origem:** Basculante tipo pluviógrafo.
+*   **Pontos Importantes**
+    - Conexão e Timestamps: Quando o instrumento perde conexão, ele represa os dados e envia todos juntos quando reconecta. Atualmente, os dados antigos represados estão sendo inseridos no banco com o mesmo horário e minuto (diferindo apenas por segundos) do momento da reconexão. **Isso está incorreto**. Esses dados antigos trazem uma informação extra no payload: a data e hora originais de quando foram coletados. É essa data de coleta original que deve ser utilizada para a inserção no banco de dados, e não o horário de recebimento.
+
+### 🔵 Demanda 3: Planejamento de UX/UI para Inclinômetros
+**Prioridade:** Planejamento (Prazo: 2 meses)
+
+*   **Contexto:** Novos inclinômetros serão instalados. Cada equipamento possui cerca de 30 sensores distribuídos em diferentes profundidades.
+*   **Pontos Importantes**
+    - Estrutura dos dados: Os dados chegarão organizados por `id_master` (identificador do inclinômetro) e `id_slave` (identificador de cada sensor de profundidade específico).
