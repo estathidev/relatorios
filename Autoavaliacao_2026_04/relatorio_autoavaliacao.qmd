@@ -1,0 +1,82 @@
+---
+title: "Relatório de Autoavaliação - Abril de 2026"
+author: "Thiago"
+date: "today"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    embed-resources: true
+  pdf:
+    toc: true
+---
+
+# Objetivos Iniciais
+
+O foco principal para este período era duplo. Primeiramente, buscar uma imersão prática na área de análise de dados, com o objetivo de ganhar experiência real e compreender as demandas e o ritmo de trabalho de uma empresa. Em segundo lugar, havia o desejo de me reaproximar da pesquisa científica, explorando problemas com maior profundidade teórica e aplicando metodologias de análise mais robustas.
+
+# Avaliação das Contribuições - Abril de 2026
+
+Este documento detalha minhas contribuições e atividades durante o mês de Abril de 2026. O objetivo é refletir sobre o progresso, os desafios e os aprendizados em cada projeto, buscando refletir sobre as áreas onde pude contribuir mais, como na concepção de ideias e na análise exploratória, e também sobre os desafios encontrados e as oportunidades de desenvolvimento.
+
+## Análise Inicial: Dados Meteorológicos e Deslizamentos
+
+**Descrição:** Um primeiro contato interessante neste período foi rever os dados meteorológicos disponíveis para o Brasil e levantar a qualidade desses dados em conjunto com um banco de dados de deslizamentos. O trabalho foi concentrado no diretório `~/datasets-landslides` e envolveu uma análise exploratória profunda utilizando R, RMarkdown e Quarto.
+
+**Contribuições:** Esta foi uma etapa puramente analítica, onde pude me aprofundar na exploração dos dados, na geração de visualizações e na avaliação da qualidade das fontes, que é uma área onde me sinto bastante confortável e produtivo.
+
+
+## Projeto: suporte-priscila
+
+**Descrição:** O projeto consiste em apoiar a Priscila na análise de dados geológicos levantados por ela ao longo de rodovias. O objetivo central foi desenvolver uma ferramenta interativa (dashboard em Shiny) que permitisse não apenas a visualização geoespacial dos dados, mas também uma profunda análise exploratória, além de servir como base para a exploração de artigos científicos e modelos analíticos aplicáveis.
+
+**Principais Contribuições:**
+
+- **Dashboard em Shiny para Análise Geoespacial e Exploratória:**
+  - A concepção do dashboard em Shiny foi uma etapa em que pude contribuir bem, especialmente na discussão das diretrizes iniciais e na análise exploratória dos dados. Minha base em física ajudou no entendimento do problema e no direcionamento de algumas soluções. A colaboração com a Priscila para definir as funcionalidades foi muito produtiva, e contei com a ajuda do Matheus para um upgrade no formato do dashboard. No entanto, ao passar da fase de prototipagem para a implementação em um ambiente de servidor, senti dificuldades e percebi que esta é uma área onde preciso me desenvolver mais.
+
+- **Pesquisa de Artigos e Prospecção de Modelos:**
+  - A exploração de literatura científica para investigar modelos aplicáveis foi outra área onde me senti confortável. O Matheus também contribuiu trazendo artigos e ajudando na análise dos modelos citados, o que enriqueceu o trabalho.
+
+- **Integração de Dados Geológicos:**
+  - A discussão sobre a lógica por trás dos dados geológicos para a integração no mapa foi importante para enriquecer a análise exploratória, uma etapa que aprecio no desenvolvimento.
+
+## Projeto: plataforma-trigrs
+
+**Descrição:** Este projeto é dedicado à plataforma TRIGRS, com o objetivo de integrar e automatizar modelos de simulação de deslizamentos de terra para análises mais eficientes.
+
+**Principais Contribuições:**
+
+- **Versão Original Fortran do TRIGRS com Automação:**
+  - Este projeto foi onde tive um contato mais próximo com as equações da geotecnia, e minha base em física contribuiu bastante para o entendimento do problema e para o direcionamento de soluções. Para conseguir rodar o processo de forma coerente, construí os arquivos de compilação e os scripts necessários. Implementei também uma forma mais dinâmica para o TRIGRS extrair alguns parâmetros, como as dimensões da área, diretamente dos dados de altimetria. Além disso, encontrei um modelo geofísico para gerar produtos necessários para a análise. Essas automações permitiram um foco maior nos parâmetros de entrada e na análise dos resultados, uma etapa em que me dei bem.
+  - No entanto, sofri na parte mais avançada da implementação no servidor. Precisei da ajuda do Matheus para finalizar, organizar o programa e, principalmente, fazer ele rodar no servidor. Isso reforçou que a implementação em ambiente de produção ainda é um ponto de dificuldade para mim.
+
+## Projeto: atividade-plumbr
+
+**Descrição:** Esta atividade foi focada em aprender a lidar com o servidor, envolvendo a refatoração e a preparação de um projeto para o ambiente de produção.
+
+**Principais Contribuições:**
+
+- **Refatoração e Documentação:**
+  - Achei a atividade complexa, mas gostei de aprender. Ficou claro que entender o funcionamento do servidor é minha maior dificuldade no momento. Apesar do desafio, e com base nos commits que realizei, vejo que foi uma experiência de aprendizado importante para entender minhas limitações e onde preciso focar meus estudos.
+
+## Resumo em Tabela
+
+| Projeto | Pontos Positivos | Pontos de Melhoria / Desafios |
+| :--- | :--- | :--- |
+| **Análise de Dados Meteorológicos** | - Forte aptidão para análise exploratória e avaliação da qualidade dos dados. <br> - Conforto e produtividade em tarefas puramente analíticas. | - (Não aplicável para esta fase inicial de análise) |
+| **suporte-priscila** | - Boa contribuição nas diretrizes iniciais e análise exploratória. <br> - Entendimento do problema com base em conhecimentos de física. <br> - Colaboração produtiva com a equipe (Priscila e Matheus). <br> - Facilidade na pesquisa de artigos e entendimento dos modelos. | - Dificuldade na transição do protótipo (dashboard Shiny) para o ambiente de servidor. |
+| **plataforma-trigrs** | - Construção dos scripts de compilação e execução. <br> - Implementação de extração dinâmica de parâmetros a partir dos dados. <br> - Prospecção de um modelo geofísico para gerar inputs. <br> - Entendimento da física do problema, que ajudou a direcionar soluções. <br> - Boa capacidade de interpretar os resultados do modelo. | - Dificuldade na implementação avançada e na configuração do programa no servidor. <br> - Necessidade de apoio para finalizar e colocar o programa em produção. |
+| **atividade-plumbr** | - Disposição para aprender sobre temas complexos (servidor). <br> - Oportunidade para praticar e melhorar o fluxo de trabalho com Git. | - A complexidade do ambiente de servidor foi um grande desafio. <br> - Percepção clara da dificuldade com infraestrutura. |
+
+## Reflexões sobre o Processo de Desenvolvimento
+
+Ao longo de abril, pude observar alguns padrões no meu trabalho. Percebi que tenho um grande interesse em mergulhar nas **ideias iniciais** e na **discussão física dos problemas**, como na análise dos dados meteorológicos e no estudo das equações do TRIGRS. Desconstruir um problema complexo para entender seus fundamentos é algo que me motiva e onde sinto que posso contribuir de forma mais efetiva. Da mesma forma, a **análise exploratória** de dados é uma fase que aprecio bastante.
+
+No entanto, identifiquei que a **implementação em ambientes de servidor** ainda é um desafio e uma área para crescimento. A transição de um protótipo para uma solução robusta em um servidor, especialmente com sistemas legados, demanda habilidades que reconheço como um ponto importante para meu desenvolvimento. As experiências com o `plumbr` e a automação do TRIGRS, onde precisei do apoio do Matheus, foram exemplos claros disso.
+
+Por outro lado, tenho notado uma melhora gradual no meu fluxo de trabalho com Git. A disciplina na criação de commits e na organização de branches tem se tornado mais natural. Este aprimoramento foi visível no projeto `atividade-plumbr`. Reconheço que um fluxo de trabalho eficiente com Git é fundamental para a colaboração, e estou comprometido em continuar aprimorando essa habilidade.
+
+## Conclusão
+
+Em suma, o mês de abril de 2026 foi um período de muita atividade e aprendizado. Procurei contribuir principalmente na **geração de ideias e na discussão da essência dos problemas**, utilizando a **análise exploratória** para guiar as soluções. Embora tenha encontrado desafios na **implementação em ambientes de servidor**, essa experiência foi uma importante oportunidade de aprendizado e desenvolvimento. A **melhora gradual no meu fluxo de trabalho com Git** reflete meu esforço em aprimorar a qualidade e a colaboração no desenvolvimento. Continuarei a focar no aprimoramento das minhas habilidades em infraestrutura, ao mesmo tempo em que continuo a aplicar meu interesse em concepção e análise para colaborar com as entregas do time.

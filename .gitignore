@@ -1,0 +1,9 @@
+# Ambientes Virtuais
+venv/
+.venv/
+
+# Dados brutos e relatórios gerados
+*/dados_brutos/
+
+# Instaladores e binários pesados
+*.deb
